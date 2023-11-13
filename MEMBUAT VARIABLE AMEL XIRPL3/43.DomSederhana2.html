@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur  adipisicing elit. Nam et libero accusamus consequuntur nemo nulla optio earum aperiam aut provident explicabo fugit quaerat quas, deleniti laborum labore sed numquam suscipit.</p>
+
+    <p class="paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, ex officia! Impedit delectus aliquam adipisci maxime velit! Earum necessitatibus fugit numquam ducimus, libero nihil non adipisci dolorem. Perspiciatis, cumque voluptatum?</p>
+
+    <p class="paragraf">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus recusandae quidem, enim cupiditate tempore pariatur perferendis repudiandae dolorum neque. Qui, quod! Animi, facere modi ipsam illo aspernatur voluptas inventore mollitia.</p>
+
+    <script>
+        var paragraf = document.getElementsByClassName("paragraf");
+        console.log(paragraf);
+        setInterval(function () {
+            paragraf[0].style.color = "red";
+            paragraf[1].style.color = "green";
+            paragraf[2].style.color = "blue";
+
+            setTimeout(function () {
+                paragraf[0].style.color = "black";
+                paragraf[1].style.color = "black";
+                paragraf[2].style.color = "black";
+            }, 500)
+        }, 1000);
+    </script>
+</body>
+</html>
